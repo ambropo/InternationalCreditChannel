@@ -1,0 +1,54 @@
+# Ignore everything by default.
+*
+
+# Keep Git metadata and project instructions.
+!.gitignore
+!.gitattributes
+!.nojekyll
+!AGENTS.md
+
+# ==============================================================
+# CONFIGURE — choose one folder mode.
+#
+# Mode A: track whitelisted file types in all folders.
+#   Keep `!*/` enabled and leave the folder list below commented out.
+#
+# Mode B: track whitelisted file types only in selected folders.
+#   Comment out `!*/` and uncomment the folders you want Git to scan.
+#
+# For each selected folder, add two lines:
+#
+#   !FOLDER/
+#   !FOLDER/**/
+#
+# This repo uses Mode A.
+# ==============================================================
+
+!*/
+#!FOLDER/
+#!FOLDER/**/
+
+# ==============================================================
+# DO NOT EDIT BELOW THIS LINE
+# ==============================================================
+
+# Keep text and source files only.
+!**/*.py
+!**/*.do
+!**/*.ado
+!**/*.m
+!**/*.mod
+!**/*.r
+!**/*.R
+!**/*.sh
+!**/*.tex
+!**/*.bib
+!**/*.sty
+!**/*.cls
+!**/*.bst
+!**/*.txt
+!**/*.md
+!**/*.json
+!**/*.yaml
+!**/*.yml
+!**/*.html
